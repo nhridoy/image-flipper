@@ -4,8 +4,8 @@ const input = document.querySelector("input");
 // Getting the input value
 
 const getInputValue = (event) => {
-  const inputValue = event.target.value;
   image.src = URL.createObjectURL(input.files[0]);
+  input.value = "";
 };
 input.addEventListener("input", getInputValue);
 
